@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — ShadowDrop</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0900; color: #fff8e7; font-family: Georgia, serif; line-height: 1.7; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 24px 48px; border-bottom: 1px solid rgba(255,215,0,0.1); }
+  .logo { font-size: 22px; font-weight: 700; color: #ffd700; text-decoration: none; }
+  .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+  h1 { font-size: 42px; color: #ffd700; margin-bottom: 8px; }
+  .date { color: #5a4a2a; font-size: 14px; margin-bottom: 48px; }
+  h2 { font-size: 22px; color: #c9a227; margin: 40px 0 12px; }
+  p { color: #8a7a4a; margin-bottom: 16px; font-size: 16px; }
+  ul { color: #8a7a4a; padding-left: 24px; margin-bottom: 16px; }
+  ul li { margin-bottom: 8px; }
+  a { color: #ffd700; }
+  footer { text-align: center; padding: 32px; border-top: 1px solid rgba(255,215,0,0.1); color: #5a4a2a; font-size: 13px; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">💚 ShadowDrop</a>
+</nav>
+<div class="container">
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: June 5, 2026</p>
+
+  <h2>1. Overview</h2>
+  <p>ShadowDrop ("we", "our", or "the app") is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights regarding your information.</p>
+  <p>ShadowDrop is designed with privacy as a core principle. Sender and recipient wallet addresses are never linked on-chain.</p>
+
+  <h2>2. Data We Collect</h2>
+  <p>We collect minimal data necessary to operate the service:</p>
+  <ul>
+    <li><strong>Drop records:</strong> ephemeral wallet address, amount, token type, creation time, expiry time, claim status. We do NOT store your main wallet address in association with drop records unless you explicitly connect your wallet.</li>
+    <li><strong>Firebase Firestore:</strong> drop metadata is stored in Firebase to enable claiming and history features.</li>
+    <li><strong>On-chain data:</strong> all transactions are publicly visible on the Solana blockchain. This is inherent to blockchain technology.</li>
+  </ul>
+
+  <h2>3. Data We Do NOT Collect</h2>
+  <ul>
+    <li>Personal identification information (name, email, phone number)</li>
+    <li>Device identifiers or advertising IDs</li>
+    <li>Location data</li>
+    <li>Private keys — your wallet private key never leaves your device</li>
+    <li>Biometric data — biometric authentication is handled entirely by your device OS</li>
+  </ul>
+
+  <h2>4. How We Use Data</h2>
+  <ul>
+    <li>To allow recipients to claim drops via link or QR code</li>
+    <li>To display your drop history when you connect your wallet</li>
+    <li>To enable cancellation and refund functionality</li>
+  </ul>
+
+  <h2>5. Data Sharing</h2>
+  <p>We do not sell, trade, or share your data with third parties for marketing or advertising purposes. Data may be shared with:</p>
+  <ul>
+    <li><strong>Firebase (Google):</strong> for database storage — governed by Google's privacy policy</li>
+    <li><strong>Solana blockchain:</strong> transaction data is public by nature of the blockchain</li>
+  </ul>
+
+  <h2>6. Data Retention</h2>
+  <p>Drop records are retained in Firebase for up to 90 days after expiry or cancellation, then permanently deleted.</p>
+
+  <h2>7. Security</h2>
+  <p>All transactions are secured by Solana's cryptographic infrastructure. We use the Mobile Wallet Adapter protocol — your private keys are never exposed to ShadowDrop. All fund movements require explicit approval in your Seeker wallet.</p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>ShadowDrop is not intended for users under 18 years of age. We do not knowingly collect data from minors.</p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+  <h2>10. Contact</h2>
+  <p>For privacy-related questions, contact us at: <a href="mailto:support@shadowdrop.app">support@shadowdrop.app</a></p>
+</div>
+<footer>© 2026 ShadowDrop. Built for Seeker on Solana.</footer>
+</body>
+</html>
